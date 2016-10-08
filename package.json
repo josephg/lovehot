@@ -10,7 +10,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "rm -f hot.love; pushd client; zip -9 -r ../hot.love *.lua; popd"
   },
   "author": "",
   "license": "ISC"
