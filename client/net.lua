@@ -6,8 +6,6 @@ local http = require('socket.http')
 
 love.filesystem.setRequirePath(love.filesystem.getRequirePath()..';_bundle/?.lua;_bundle/?/init.lua')
 
-print('sdafdfs')
-
 local function makeDirs(fullpath)
   local pathsep = string.sub(fullpath, 1, string.match(fullpath, '()/[%w. -]*$'))
   love.filesystem.createDirectory(pathsep)
