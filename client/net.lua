@@ -1,8 +1,13 @@
---local baseURL = 'http://localhost:2000'
-local baseURL = 'http://sephsmac.local:2000'
+-- Put your computer's address here! localhost will work locally, but you'll
+-- need an actual IP address to deploy to a device (iOS/Android).
+
+local baseURL = 'http://localhost:2000'
+--local baseURL = 'http://mycomputer.local:2000'
+--local baseURL = 'http://10.0.0.10:2000'
+
+
 
 local http = require('socket.http')
---http.TIMEOUT = 1
 
 love.filesystem.setRequirePath(love.filesystem.getRequirePath()..';_bundle/?.lua;_bundle/?/init.lua')
 
